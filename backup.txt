@@ -1,0 +1,26 @@
+// HEREERERER!!!!!!! LOOOK HERE YOU DUMMMMMY
+function markerLayerStyler(bin, overlayList, counter) {
+  // console.log(bin);
+  // console.log(overlayList);
+
+  // make collapsible html elements =====================================
+  const collapsibleBin = document.createElement('div');
+  const collapsibleHeader = document.createElement('div');
+  const collapsibleContent = document.createElement('div');
+  collapsibleBin.className = 'collapsible-container';
+  collapsibleHeader.className = 'collapsible-header';
+  collapsibleContent.className = 'collapsible-content';  
+  const markers = overlayList.children;
+
+  // update DOM
+  collapsibleHeader.appendChild(markers[counter]);
+  let size = markers.length;
+  let i = counter;
+  while(i < size) {
+    collapsibleContent.appendChild(markers[counter]);
+    i++;
+  }
+  collapsibleBin.appendChild(collapsibleHeader)
+  collapsibleBin.appendChild(collapsibleContent)
+  bin.appendChild(collapsibleBin);
+}

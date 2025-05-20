@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  overflow: hidden;
+  /* background-image: url("./asset/background.jpg");
+  background-size: contain;
+  background-position: center; */
+}
+
+.hero {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* legend will be collapsable  */
+#legend {
+  flex-grow: 1;
+  width: 12vw;
+  height: 80vh;
+  border: 1px solid black;
+  justify-self: start;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  overflow-y: scroll;
+  background-color: #ffffff;
+}
+
+#map {
+  flex-grow: 2;
+  margin: 0 auto;
+  width: 80vw;  
+  height: 80vh;
+  border-radius: 5px;
+}
+
+.leaflet-control-layers {
+  width: 90%;
+  align-self: center;
+}
+
+.leaflet-control-layers-overlays > label {
+  display: block;
+}
+
+.collapsible-content > label {
+  display: block;
+}
+
+.collapsible-header {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.collapsible-header:hover {
+  background-color: #aaa;
+}
+
+.collapsible-icon {
+  object-fit: contain;
+  margin: 0 0 0 .3rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+.control-bin {
+  box-sizing: content-box;
+  display: flex;
+  flex-flow: column nowrap;
+  right: 2px;
+  gap: 1px;
+  background-color: #cccccc;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.custom-control {
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  justify-self: center;
+  line-height: 30px;
+  cursor: pointer;
+  display: flex;
+  left: 2px;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.custom-control:hover {
+  background-color: #f4f4f4;
+}
+
+.control-icon {
+  width: 88%;
+}
+
+.leaflet-popup-content {
+  margin: 0px;
+  padding: 10px 0;
+  width: 30vw;
+  height: 36vh;
+}
+
+.marker-popup {
+  justify-self: center;
+  align-self: center;
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+  height: 90%;
+  width: 99%;
+  background-color: #cccccc;
+  border-radius: 5px;
+}
+
+.leaflet-popup-content > h4 {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.popup-btn {
+  margin-top: .6rem;
+  align-self: center;
+  border-radius: 5px;
+  height: 1.5rem;
+  width: auto;
+  border: 0px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.popup-btn:hover {
+  background-color: #F5d239;
+}
+
+.detailedImg {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+#marker {
+  background-color: #0D0D0D;
+  color: #F5d239;
+}
